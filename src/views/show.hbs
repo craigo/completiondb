@@ -1,0 +1,24 @@
+<div class="row">
+  <h3>Edit Completion</h3>
+  <form method="POST" action="/edit" class="form-horizontal">
+    <div class="form-group">
+      <label for="uwi" class="col-sm-2 control-label">UWI:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="uwi" name="uwi" value="{{this.uwi}}"/></br>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="licenseNo" class="col-sm-2 control-label">License No:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="licenseNo" name="licenseNo" value="{{this.licenseNo}}"/><br/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="province" class="col-sm-2 control-label"> Province:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="province" name="province" value="{{this.province}}"/><br/>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary col-sm-offset-11 col-sm-1">Update</button>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<!-- <script>
+//$().ready(function(){
+//  $('.rmBtn').click((e) => {
+//    var toRemove = $(e.currentTarget).data('id')
+//      $.post('/delete', {"_id":toRemove}, (x) => {
+//      })
+//  })
+//})
+</script> -->
+<div class="row">
+  <div class="col-md-6">
+    <p>Following is the list of Completions:</p>
+    <table class="table table-striped">
+      <thead>
+        <tr><th>UWI</th><th></th></tr>
+      </thead>
+      {{#each completions}}
+      <tr>
+        <td>{{this.uwi}}</td>
+        <td><a href="/show/{{this._id}}" class="btn btn-default pull-right"><span class="glyphicon glyphicon-pencil"></span></a>
+          <a href="/delete/{{this._id}}" class="btn btn-default rmBtn pull-right" data-id="{{this._id}}"><span class="glyphicon glyphicon-trash"></span></a>
+        </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+  <div class="row">
+    <a href="/new" class="btn btn-primary col-md-offset-6">New</a>
+  </div>
+</div>

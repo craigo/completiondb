@@ -1,0 +1,19 @@
+{
+  "name": "CompletionsDb",
+  "version": "0.0.1",
+  "description": "This is a simple CRUD application for Completions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test"
+  },
+  "author": "Craig Anderson",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.19",
+    "monk": "4.0.0"
+  }
+}
